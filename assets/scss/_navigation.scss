@@ -9,7 +9,7 @@
 	background:$color-dark;
 
 	ul {
-		margin:0;
+		margin:$global-spacing 0 0;
 		padding:0;
 		list-style:0;
 	}
@@ -20,8 +20,9 @@
 .nav-item {
 	display:block;
 	width:100%;
+	height:$global-spacing;
 	margin:0;
-	padding:1em;
+	line-height:$global-spacing;
 
 	color:#fff;
 	border:1px solid $color-dark;
@@ -56,7 +57,7 @@ $nav-colours: $color-home, $color-blog, $color-work, $color-cv, $color-about, $c
 
 .nav-icon {
 	position:absolute;
-	top:0.5em;
+	top:$global-spacing/4;
 	right:-2em;
 
 	display: inline-block;
@@ -96,5 +97,5 @@ $nav-colours: $color-home, $color-blog, $color-work, $color-cv, $color-about, $c
 	        transition:all 0.75s ease-in-out;
 }
 .navigation-control:checked + .site-container {
-	margin-left:-11.99em;
+	margin-left:(-4 * $global-spacing) + 0.1em;
 }
