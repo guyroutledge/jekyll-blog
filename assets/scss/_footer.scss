@@ -2,6 +2,14 @@
 // $$ Footer
 //**************************
 
+.site-footer {
+	p, h1, h2, h3, h4 {
+		color:#fff;
+	}
+	a:hover {
+		color:#fff;
+	}
+}
 .site-footer:after {
 	background:$color-dark;
 	border-top:5px solid #000;

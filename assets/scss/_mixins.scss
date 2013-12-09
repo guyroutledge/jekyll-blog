@@ -1,0 +1,111 @@
+//*************************
+// $$ Mixins
+//**************************
+
+@function calc-em($target-px, $context) {
+  @return ($target-px / $context) * 1em;
+}
+
+@mixin font($font-size, $line-height:1) {
+	// if font-size was passed in ems, use ems,
+	// otherwise turn the font size passed in into ems
+	@if ( unit($font-size) == 'em' ) {
+		font-size:$font-size;
+		line-height:$line-height;
+	} @else {
+		@warn 'font() mixin requires em-based font\'s to work correctly
+-- you can use the calc-em() function to do the math for you ;0)
+		';
+	}
+}
+
+@mixin selection($background, $foreground:#fff) {
+	::-moz-selection { background: $background; color: $foreground; text-shadow: none; }
+	::selection { background: $background; color: $foreground; text-shadow: none; }
+}
+
+@mixin background-image-dimensions($image) {
+	width:image-width($image);
+	height:image-height($image);
+	background-image:url($image);
+}
+
+@mixin image-replacement($image) {
+	@include background-image-dimensions($image);
+	@extend %screen-reader-text;
+}
+
+@mixin respond-to($breakpoint, $property:max-width) {
+	@media screen and ($property:$breakpoint) {
+		@content;
+	}
+}
+
+@mixin placeholder() {
+	::-webkit-input-placeholder {
+		@content;
+	}
+	::-moz-placeholder {
+		@content;
+	}
+	:-moz-placeholder {
+		@content;
+	}
+	:-ms-input-placeholder {
+		@content;
+	}
+}
+
+//media queries
+
+@mixin breakpoint($point) {
+  @if $point == media-standard {
+    @media (min-width: $media-desktop) { @content; }
+  }
+  //left in for any future
+  @else if $point == media-tablet {
+    @media (max-width: $media-tablet) { @content; }
+  }
+  @else if $point == media-mobile {
+    @media (max-width: $media-mobile)  { @content; }
+  }
+}
+
+
+// Because IE8/9 don't like the :valid & :invalid psuedo classes when in a comma
+// separated list of selectors, the styles are never getting applied. Let's create
+// a mixin so avoid duplication and add the necessary styles as required.
+@mixin valid-form-styles {
+	@include box-sizing(border-box);
+
+	width:100%;
+	margin:0;
+	padding:0.75em 0.5em 0.75em 1em;
+
+	color:$color-copy;
+	background:lighten($color-form, 40%);
+	background:rgba($color-form, 0.1);
+
+	border:0;
+	border-radius:0;
+	outline:0;
+	-webkit-appearance:none;
+
+	&:focus {
+		outline:none;
+	}
+}
+@mixin invalid-form-styles {
+	color:$color-highlight;
+	background:$color-error;
+}
+
+@mixin submit-arrow {
+	overflow: hidden;
+	text-indent: 999px;
+	color: transparent;
+	border: none;
+	background-color: transparent;
+	@include illustrations-sprite(submit-arrow);
+}
+
