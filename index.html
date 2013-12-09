@@ -3,11 +3,33 @@ layout: default
 title: Home
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="home">
+
+	<section class="home-articles-section">
+		<h1 class="home-articles-title"><a href="/blog">Latest Articles</a></h1>
+		{% for post in site.posts %}
+			<article class="home-article">
+				<time class="home-article-post-date">{{ post.date | date_to_string }}</time>
+				<span class="home-article-post-category">{{ post.categories }}</span>
+				<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			</article>
+		{% endfor %}
+	</section>
+
+	<section class="home-projects-section">
+	<h1 class="home-projects-title"><a href="/projects">Latest Projects</a></h1>
+
+		<article class="home-project">
+			<time class="home-project-post-date">09 Dec 2013</time>
+			<span class="home-project-post-url"><a href="#">http://www.example.com</a></span>
+			<h2><a href="/projects/project">Example Project</a></h2>
+		</article>
+		<article class="home-project">
+			<time class="home-project-post-date">09 Dec 2013</time>
+			<span class="home-project-post-url"><a href="#">http://www.example.com</a></span>
+			<h2><a href="/projects/project">Example Project</a></h2>
+		</article>
+
+	</section>
+
 </div>
