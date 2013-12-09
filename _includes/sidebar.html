@@ -1,9 +1,5 @@
 <aside class="site-sidebar">
 
-	{% if site.available %}
-		{% include available.html %}
-	{% endif %}
-
 	<nav class="site-sidebar-navigation">
 		<a href="/" title="Go back to the homepage"><img src="/images/me.png" alt="Guy Routledge"></a>
 		{% if page.next %} <a href="{{ page.next.url }}" title="{{ page.next.title }}">Next</a> {% endif %}

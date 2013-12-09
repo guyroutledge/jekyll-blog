@@ -1,0 +1,32 @@
+//*************************
+// $$ Available Banner
+//**************************
+
+.available-banner {
+	position:absolute;
+	top:0;
+	right:$global-spacing;
+
+	padding:6em 1.5em 1.5em;
+
+	color:$color-light;
+	background:$color-hire;
+	box-shadow:0 5px 0 white,
+               0 10px 0 $color-hire;
+
+	font-size:0.875em; // 14px / 16px
+	text-align:center;
+	text-transform:uppercase;
+
+	em {
+		display:block;
+		color:#fff;
+		font-size:1.5em;
+		text-transform:none;
+	}
+	span {
+		display:block;
+		font-size:1.25em;
+	}
+}
+
