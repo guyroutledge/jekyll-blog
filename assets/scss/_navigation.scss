@@ -3,7 +3,98 @@
 //**************************
 
 .site-navigation {
+	position:relative;
+
 	color:#fff;
 	background:$color-dark;
+
+	ul {
+		margin:0;
+		padding:0;
+		list-style:0;
+	}
+	li {
+		margin:0;
+	}
+}
+.nav-item {
+	display:block;
+	width:100%;
+	margin:0;
+	padding:1em;
+
+	color:#fff;
+	border:1px solid $color-dark;
+	border-top:0;
+
+	font-family:$font-copy;
+	font-size:1em;
+	text-transform:uppercase;
+	text-align:center;
+
+	-webkit-transition:all 0.3s ease;
+	   -moz-transition:all 0.3s ease;
+	     -o-transition:all 0.3s ease;
+	    -ms-transition:all 0.3s ease;
+	        transition:all 0.3s ease;
 }
 
+$i:1;
+$nav-items: 'home', 'articles', 'work', 'cv', 'about', 'hire-me';
+$nav-colours: $color-home, $color-blog, $color-work, $color-cv, $color-about, $color-hire;
+
+@each $item in $nav-items {
+	.nav-item-#{$item} {
+		background:nth($nav-colours, $i);
+
+		&:hover {
+			background:lighten( nth($nav-colours, $i), 15% );
+		}
+	}
+	$i: $i + 1;
+}
+
+.nav-icon {
+	position:absolute;
+	top:0.5em;
+	right:-2em;
+
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+
+	cursor:pointer;
+	z-index:100;
+
+	&:after {
+		content:"";
+		position:absolute;
+		left:0;
+
+		width:5px;
+		height:25px;
+
+		box-shadow: 5px  0 0 $color-light,
+					8px  0 0 white,
+					13px 0 0 $color-light,
+					16px 0 0 white,
+					21px 0 0 $color-light;
+
+		z-index:200;
+	}
+}
+
+.navigation-control {
+	position:absolute;
+	left:-9999px;
+}
+.site-container {
+	-webkit-transition:all 0.75s ease-in-out;
+	   -moz-transition:all 0.75s ease-in-out;
+	     -o-transition:all 0.75s ease-in-out;
+	    -ms-transition:all 0.75s ease-in-out;
+	        transition:all 0.75s ease-in-out;
+}
+.navigation-control:checked + .site-container {
+	margin-left:-11.99em;
+}

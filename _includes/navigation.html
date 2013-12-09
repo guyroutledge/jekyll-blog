@@ -1,12 +1,13 @@
 <nav class="site-navigation">
 
+	<label for="navigation" class="nav-icon"></label>
 	<ul>
 		{% for link in site.links %}
 			<li>
 				{% if link.external %}
-					<a href="{{ link.url }}">{{ link.title }}</a>
+					<a href="{{ link.url }}" class="nav-item nav-item-{{ link.title | downcase | replace:' ','-' }}">{{ link.title }}</a>
 				{% else %}
-					<a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+					<a href="{{ site.url }}{{ link.url }}" class="nav-item nav-item-{{ link.title | downcase | replace:' ','-' }}">{{ link.title }}</a>
 				{% endif %}
 			</li>
 		{% endfor %}

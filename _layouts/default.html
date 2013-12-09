@@ -8,18 +8,21 @@
 		<link rel="stylesheet" href="/assets/css/main.min.css">
 	</head>
 	<body>
+		<!-- show hide navigation by switching :checked pseudo class -->
+		<input type="checkbox" id="navigation" class="navigation-control" checked>
+		<div class="site-container">
 
-		{% include navigation.html %}
+			{% include navigation.html %}
 
-		<div class="site-content">
+			<div class="site-content">
 
-			{{ content }}
+				{{ content }}
 
-			{% include sidebar.html %}
-			{% include footer.html %}
+				{% include sidebar.html %}
+				{% include footer.html %}
+
+			</div>
 
 		</div>
-
-
 	</body>
 </html>
