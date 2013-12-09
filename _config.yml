@@ -1,4 +1,19 @@
 name: Guy Routledge
 description: Musings on web development, design & business
-pygments: true
 available: true
+
+links:
+    - title: Home
+      url: /
+    - title: Articles
+      url: /blog
+    - title: Work
+      url: /work
+    - title: CV
+      url: /cv
+    - title: About
+      url: /about
+    - title: Hire Me
+      url: /hire-me
+
+pygments: true
