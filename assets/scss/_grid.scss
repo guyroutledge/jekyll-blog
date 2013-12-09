@@ -1,0 +1,52 @@
+//*************************
+// $$ Layout
+//**************************
+
+* {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+%grid-fixed {
+	display:table-cell;
+	vertical-align:top;
+}
+
+%grid-wide {
+	@extend %grid-fixed;
+
+	width:50em;
+	padding-right:10em; // make space for positioned sidebar
+}
+%grid-narrow {
+	@extend %grid-fixed;
+	width:10em;
+}
+
+.site-navigation {
+	@extend %grid-narrow;
+}
+.site-content {
+	@extend %grid-wide;
+}
+
+.site-content,
+.home, .post,
+.site-footer {
+	position:relative;
+}
+
+.site-sidebar,
+.site-footer-social {
+	position:absolute;
+	top:0;
+
+	width:10em;
+}
+.site-sidebar {
+	right:0;
+}
+.site-footer-social {
+	left:100%;
+	height:100%;
+}
