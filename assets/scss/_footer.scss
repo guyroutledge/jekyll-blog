@@ -70,3 +70,11 @@
 	        transition:all 0.3s ease;
 	}
 }
+.site-footer-copyright {
+	margin:$global-spacing*2 0 0;
+	line-height:1em;
+
+	small {
+		color:darken($color-light, 25%);
+	}
+}
