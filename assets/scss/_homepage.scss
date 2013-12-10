@@ -2,6 +2,58 @@
 // $$ Homepage
 //**************************
 
+.home-articles-title a,
+.home-projects-title a {
+	@extend %button;
+	@extend %background-articles;
+	@extend %button-small;
+
+	position:relative;
+	padding-left:0;
+	font-style:none;
+
+	&:before {
+		content:'';
+		position:absolute;
+		top:0;
+		right:100%;
+
+		width:3.9em;
+		height:100%;
+
+	    -webkit-transition:all 0.3s ease;
+	       -moz-transition:all 0.3s ease;
+	         -o-transition:all 0.3s ease;
+	        -ms-transition:all 0.3s ease;
+	            transition:all 0.3s ease;
+	}
+}
+.home-articles-title a  {
+	@extend %background-articles;
+
+	&:before {
+		@extend %background-articles;
+	}
+	&:hover:before {
+		background:lighten($color-blog, 15%);
+	}
+}
+.home-projects-title a  {
+	@extend %background-work;
+
+	&:before {
+		@extend %background-work;
+	}
+	&:hover:before {
+		background:lighten($color-work, 15%);
+	}
+}
+.home-projects-title a {
+	@extend %button;
+	@extend %background-work;
+	@extend %button-small;
+	font-style:none;
+}
 .home-article,
 .home-project {
 	@extend %archive-item;
@@ -9,6 +61,12 @@
 .home-article-post-title,
 .home-project-post-title {
 	@extend %archive-title;
+}
+.home-article-post-title a {
+	@extend %color-articles;
+}
+.home-project-post-title a {
+	@extend %color-work;
 }
 .home-article-post-date,
 .home-project-post-date {

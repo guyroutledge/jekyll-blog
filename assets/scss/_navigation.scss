@@ -23,6 +23,14 @@ $nav-items: 'home', 'articles', 'work', 'cv', 'about', 'hire-me';
 	.nav-#{$nav-item} {
 		@extend %button;
 		@extend %background-#{$nav-item};
+		display:block;
+		width:100%;
+		height:$global-spacing;
+		line-height:$global-spacing;
+		padding:0!important;
+
+		border:1px solid $color-dark;
+		border-top:0;
 	}
 }
 
