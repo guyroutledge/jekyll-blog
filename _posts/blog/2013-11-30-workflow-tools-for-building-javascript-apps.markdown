@@ -2,9 +2,8 @@
 layout:     post
 title:      "Workflow tools for building javascript apps"
 date:       2013-11-30 10:20:28
-categories:
-- blog
-- workflow
+tags:       workflow
+categories: blog
 ---
 
 ## Questions, questions

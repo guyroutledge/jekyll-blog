@@ -18,7 +18,7 @@
 	}
 }
 
-$nav-items: 'home', 'articles', 'work', 'about', 'hire-me';
+$nav-items: 'home', 'articles', 'projects', 'about', 'hire-me';
 @each $nav-item in $nav-items {
 	.nav-#{$nav-item} {
 		@extend %button;

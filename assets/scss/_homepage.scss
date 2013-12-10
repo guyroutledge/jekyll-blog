@@ -39,10 +39,10 @@
 	}
 }
 .home-projects-title a  {
-	@extend %background-work;
+	@extend %background-projects;
 
 	&:before {
-		@extend %background-work;
+		@extend %background-projects;
 	}
 	&:hover:before {
 		background:lighten($color-work, 15%);
@@ -50,7 +50,7 @@
 }
 .home-projects-title a {
 	@extend %button;
-	@extend %background-work;
+	@extend %background-projects;
 	@extend %button-small;
 	font-style:none;
 }
@@ -66,7 +66,7 @@
 	@extend %color-articles;
 }
 .home-project-post-title a {
-	@extend %color-work;
+	@extend %color-projects;
 }
 .home-article-post-date,
 .home-project-post-date {

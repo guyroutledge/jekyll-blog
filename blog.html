@@ -1,0 +1,21 @@
+---
+layout: default
+title: Articles
+permalink: /blog/index.html
+---
+
+<div class="articles main-content">
+
+	<header class="post-header">
+		<h1>Articles &amp; Ramblings</h1>
+	</header>
+
+	{% for post in site.categories['blog'] | limit: 5 %}
+		<article class="home-article">
+			<time class="home-article-post-date">{{ post.date | date_to_string }}</time>
+			<span class="home-article-post-category">{{ post.tags }}</span>
+			<h2 class="home-article-post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		</article>
+	{% endfor %}
+
+</div>

@@ -31,7 +31,7 @@
 }
 
 $i:1;
-$sections: 'home', 'articles', 'articles-light', 'work', 'about', 'hire-me';
+$sections: 'home', 'articles', 'articles-light', 'projects', 'about', 'hire-me';
 $section-colours: $color-home, $color-blog, desaturate(lighten($color-blog, 15%), 25%), $color-work, $color-about, $color-hire;
 
 @each $section in $sections {

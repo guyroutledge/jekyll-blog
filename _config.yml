@@ -2,13 +2,14 @@ name: Guy Routledge
 description: Musings on web development, design & business
 available: true
 
+permalink: /:categories/:title
 links:
     - title: Home
       url: /
     - title: Articles
       url: /blog
-    - title: Work
-      url: /work
+    - title: Projects
+      url: /projects
     - title: About
       url: /about
     - title: Hire Me
