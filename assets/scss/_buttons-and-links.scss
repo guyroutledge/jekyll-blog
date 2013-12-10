@@ -41,6 +41,8 @@ $section-colours: $color-home, $color-blog, $color-work, $color-cv, $color-about
 	%color-#{$section} {
 		color:nth($section-colours, $i);
 
+	}
+	a%color-#{$section} {
 		&:hover {
 			color:lighten( nth($section-colours, $i), 15% );
 		}

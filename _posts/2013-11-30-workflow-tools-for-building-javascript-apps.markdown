@@ -11,6 +11,9 @@ What Javascript framework should I use? Backbone, Ember, Angular, Meteor, Hoodie
 
 So. Many. Questions.
 
+> This is what a block-quote looks like. It might be a little on the
+> long side, but that's ok really.
+
 But unfortunately, these are all questions that have been rolling around my head over the last few weeks. I'm starting a new project and want to ensure that I go down the right track from the start rather than just cracking open a text editor and riffing. On one hand you could argue that things can be cleaned up once they have started to take shape. On the other hand, if time can be saved early on by having a maintainable project structure and the right tools, that sounds like a good thing to me.
 
 ## On picking the right framework

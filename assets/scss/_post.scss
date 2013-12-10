@@ -1,0 +1,45 @@
+//*************************
+// $$ Post
+//**************************
+
+.post {
+	h1, h2, h3, h4, h5, h6, a {
+		@extend %color-articles;
+	}
+	p + h1,
+	p + h2,
+	p + h3,
+	p + h4 {
+		margin-top:$font-margin-bottom * 2;
+	}
+	li {
+		margin:0 0 0.5em;
+	}
+	blockquote {
+		margin:$global-spacing/4 0;
+		padding:$global-spacing/4 $global-spacing $global-spacing/4 $global-spacing/4;
+
+		color:lighten($color-blog, 15%);
+		border-left:5px solid $color-blog;
+		font-size:2em;
+		line-height:1em;
+		font-family:$font-brand;
+		font-style:italic;
+
+		p:last-child { margin-bottom:0; }
+
+	}
+}
+.post-header {
+	margin: 0 0 $global-spacing;
+	text-align:center;
+}
+.post-header h1 {
+	font-size:calc-em($font-size-mega, $font-size-body);
+	line-height:1em;
+}
+.post-meta {
+	color:$color-light;
+	font-size:0.875em;
+}
+
