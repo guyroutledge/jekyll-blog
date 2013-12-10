@@ -27,16 +27,16 @@
 }
 
 .site-content,
-.home, .post,
+.main-content,
 .site-footer {
 	position:relative;
 }
-.home, .post,
+.main-content,
 .site-footer,
 .site-footer-social {
 	padding:$global-spacing;
 }
-.home, .post {
+.main-content {
 	padding-bottom:$global-spacing * 2;
 }
 

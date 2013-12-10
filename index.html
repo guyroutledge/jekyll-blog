@@ -3,11 +3,11 @@ layout: default
 title: Home
 ---
 
-<div class="home">
+<div class="home main-content">
 
 	<section class="home-articles-section">
 		<h1 class="home-articles-title"><a href="/blog">Latest Articles</a></h1>
-		{% for post in site.posts | limit: 5 %}
+		{% for post in site.categories['blog'] | limit: 5 %}
 			<article class="home-article">
 				<time class="home-article-post-date">{{ post.date | date_to_string }}</time>
 				<span class="home-article-post-category">{{ post.categories }}</span>
@@ -18,18 +18,13 @@ title: Home
 
 	<section class="home-projects-section">
 		<h1 class="home-projects-title"><a href="/projects">Latest Projects</a></h1>
-
-		<article class="home-project">
-			<time class="home-project-post-date">09 Dec 2013</time>
-			<span class="home-project-post-url"><a href="#">http://www.example.com</a></span>
-			<h2 class="home-project-post-title"><a href="/projects/project">Example Project</a></h2>
-		</article>
-		<article class="home-project">
-			<time class="home-project-post-date">09 Dec 2013</time>
-			<span class="home-project-post-url"><a href="#">http://www.example.com</a></span>
-			<h2 class="home-project-post-title"><a href="/projects/project">Example Project</a></h2>
-		</article>
-
+		{% for post in site.categories['projects'] | limit: 2 %}
+			<article class="home-project">
+				<time class="home-project-post-date">{{ post.date | date_to_string }}</time>
+				<span class="home-project-post-url"><a href="{{ post.link }}">{{ post.link }}</a></span>
+				<h2 class="home-project-post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			</article>
+		{% endfor %}
 	</section>
 
 	{% include sidebar.html %}
