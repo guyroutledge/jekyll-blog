@@ -17,42 +17,13 @@
 		margin:0;
 	}
 }
-.nav-item {
-	display:block;
-	width:100%;
-	height:$global-spacing;
-	margin:0;
-	line-height:$global-spacing;
 
-	color:#fff;
-	border:1px solid $color-dark;
-	border-top:0;
-
-	font-family:$font-copy;
-	font-size:1em;
-	text-transform:uppercase;
-	text-align:center;
-
-	-webkit-transition:all 0.3s ease;
-	   -moz-transition:all 0.3s ease;
-	     -o-transition:all 0.3s ease;
-	    -ms-transition:all 0.3s ease;
-	        transition:all 0.3s ease;
-}
-
-$i:1;
 $nav-items: 'home', 'articles', 'work', 'cv', 'about', 'hire-me';
-$nav-colours: $color-home, $color-blog, $color-work, $color-cv, $color-about, $color-hire;
-
-@each $item in $nav-items {
-	.nav-item-#{$item} {
-		background:nth($nav-colours, $i);
-
-		&:hover {
-			background:lighten( nth($nav-colours, $i), 15% );
-		}
+@each $nav-item in $nav-items {
+	.nav-#{$nav-item} {
+		@extend %button;
+		@extend %background-#{$nav-item};
 	}
-	$i: $i + 1;
 }
 
 .nav-icon {
@@ -97,5 +68,5 @@ $nav-colours: $color-home, $color-blog, $color-work, $color-cv, $color-about, $c
 	        transition:all 0.75s ease-in-out;
 }
 .navigation-control:checked + .site-container {
-	margin-left:(-4 * $global-spacing) + 0.1em;
+	margin-left:(-4 * $global-spacing) + 0.5em;
 }

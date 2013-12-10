@@ -1,0 +1,48 @@
+//*************************
+// $$ Buttons & Links
+//**************************
+
+%button {
+	display:block;
+	width:100%;
+	height:$global-spacing;
+	margin:0;
+	line-height:$global-spacing;
+
+	color:#fff;
+	border:1px solid $color-dark;
+	border-top:0;
+
+	font-family:$font-copy;
+	font-size:1em;
+	text-transform:uppercase;
+	text-align:center;
+
+	-webkit-transition:all 0.3s ease;
+	   -moz-transition:all 0.3s ease;
+	     -o-transition:all 0.3s ease;
+	    -ms-transition:all 0.3s ease;
+	        transition:all 0.3s ease;
+}
+
+$i:1;
+$sections: 'home', 'articles', 'work', 'cv', 'about', 'hire-me';
+$section-colours: $color-home, $color-blog, $color-work, $color-cv, $color-about, $color-hire;
+
+@each $section in $sections {
+	%background-#{$section} {
+		background:nth($section-colours, $i);
+
+		&:hover {
+			background:lighten( nth($section-colours, $i), 15% );
+		}
+	}
+	%color-#{$section} {
+		color:nth($section-colours, $i);
+
+		&:hover {
+			color:lighten( nth($section-colours, $i), 15% );
+		}
+	}
+	$i: $i + 1;
+}
