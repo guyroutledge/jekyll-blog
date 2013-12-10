@@ -4,7 +4,7 @@
 
 .site-footer {
 	p, h1, h2, h3, h4 {
-		color:#fff;
+		color:$color-light;
 	}
 	a:hover {
 		color:#fff;
@@ -13,4 +13,28 @@
 .site-footer:after {
 	background:$color-dark;
 	border-top:5px solid #000;
+}
+
+.site-footer-content {
+	max-width:40em;
+
+	span, em {
+		display:inline-block;
+
+		color:#fff;
+		font-size:1.75em;
+		font-family:$font-brand;
+		font-style:italic;
+	}
+	em {
+		margin:0 0.15em;
+	}
+	span {
+		margin:0 0.15em 0 0;
+	}
+}
+.site-footer-hire-button {
+	@extend %button;
+	@extend %background-hire-me;
+	padding:0.75em 6em;
 }

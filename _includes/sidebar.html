@@ -1,9 +1,17 @@
-<aside class="site-sidebar">
+<a href="https://plus.google.com/105864067956325551667">
+	<img src="/images/me.jpg" class="authorship-image" alt="Guy Routledge avatar">
+</a>
 
-	<nav class="site-sidebar-navigation">
-		<a href="/" title="Go back to the homepage"><img src="/images/me.png" alt="Guy Routledge"></a>
-		{% if page.next %} <a href="{{ page.next.url }}" title="{{ page.next.title }}">Next</a> {% endif %}
-		{% if page.previous %}<a href="{{ page.previous.url }}" title="{{ page.previous.title }}">Previous</a>{% endif %}
-	</nav>
+{% if page.next or page.previous %}
 
-</aside>
+	<aside class="site-sidebar">
+
+		<nav class="site-sidebar-navigation">
+			{% if page.next %}<a href="{{ page.next.url }}" title="{{ page.next.title }}" class="site-sidebar-next">Next Post</a>{% endif %}
+			{% if page.previous %}<a href="{{ page.previous.url }}" title="{{ page.previous.title }}" class="site-sidebar-prev">Previous Post</a>{% endif %}
+			<a href="/" title="Go back to the homepage" class="site-sidebar-home">Go Home</a>
+		</nav>
+
+	</aside>
+
+{% endif %}

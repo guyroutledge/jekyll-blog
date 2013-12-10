@@ -11,7 +11,8 @@
 	@extend %grid-fixed;
 
 	width:auto;
-	padding-right:(4 * $global-spacing) + 1em;
+	max-width:50em;
+	padding-right:(4 * $global-spacing);
 }
 %grid-narrow {
 	@extend %grid-fixed;
@@ -35,9 +36,13 @@
 .site-footer-social {
 	padding:$global-spacing;
 }
+.home, .post {
+	padding-bottom:$global-spacing * 2;
+}
 
 .site-sidebar {
-	bottom:0;
+	bottom:5px; // account for border on footer
+	left:100%;
 }
 .site-sidebar,
 .site-footer-social {

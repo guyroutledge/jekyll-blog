@@ -10,7 +10,7 @@
 	color:#fff;
 
 	font-family:$font-copy;
-	font-size:1rem;
+	font-size:0.875em;
 	text-transform:uppercase;
 	text-align:center;
 
@@ -19,6 +19,10 @@
 	     -o-transition:all 0.3s ease;
 	    -ms-transition:all 0.3s ease;
 	        transition:all 0.3s ease;
+
+	&:hover {
+		color:$color-copy;
+	}
 }
 %button-small {
 	padding:0.5em 1em;
@@ -27,8 +31,8 @@
 }
 
 $i:1;
-$sections: 'home', 'articles', 'work', 'cv', 'about', 'hire-me';
-$section-colours: $color-home, $color-blog, $color-work, $color-cv, $color-about, $color-hire;
+$sections: 'home', 'articles', 'articles-light', 'work', 'cv', 'about', 'hire-me';
+$section-colours: $color-home, $color-blog, desaturate(lighten($color-blog, 15%), 25%), $color-work, $color-cv, $color-about, $color-hire;
 
 @each $section in $sections {
 	%background-#{$section} {
