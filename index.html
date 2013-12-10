@@ -7,7 +7,7 @@ title: Home
 
 	<section class="home-articles-section">
 		<h1 class="home-articles-title"><a href="/blog">Latest Articles</a></h1>
-		{% for post in site.posts %}
+		{% for post in site.posts | limit: 5 %}
 			<article class="home-article">
 				<time class="home-article-post-date">{{ post.date | date_to_string }}</time>
 				<span class="home-article-post-category">{{ post.categories }}</span>
