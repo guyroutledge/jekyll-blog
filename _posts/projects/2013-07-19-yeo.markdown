@@ -1,0 +1,8 @@
+---
+layout:     project
+title:      "Yeo Valley"
+date:       2013-07-19 10:20:28
+link:       http://www.yeovalley.co.uk
+categories:
+- projects
+---
