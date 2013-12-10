@@ -1,0 +1,26 @@
+// Generate @font-face declarations for a list of fonts
+
+// relative path to fonts
+$font-path: '../fonts/';
+// the name that will be used in font-family property
+$font-families: 'baskerville', 'PTSans', 'icons';
+// the filename of your font without the file extension
+$font-filenames: 'baskerville', 'pt-sans', 'icons';
+$i: 1;
+
+@each $font-family in $font-families {
+
+	@font-face {
+		font-family: $font-family;
+		src: url($font-path + nth($font-filenames, $i) + '.eot');
+		src: url($font-path + nth($font-filenames, $i) + '.eot?#iefix') format('embedded-opentype'),
+		url($font-path + nth($font-filenames, $i) + '.woff') format('woff'),
+		url($font-path + nth($font-filenames, $i) + '.ttf') format('truetype'),
+		url($font-path + nth($font-filenames, $i) + '.svg#' + $font-family) format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	$i: $i+1;
+
+}
+

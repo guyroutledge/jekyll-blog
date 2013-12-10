@@ -16,8 +16,10 @@
 }
 
 .site-footer-content {
-	max-width:40em;
 
+	p {
+		max-width:80%;
+	}
 	span, em {
 		display:inline-block;
 
@@ -37,4 +39,34 @@
 	@extend %button;
 	@extend %background-hire-me;
 	padding:0.75em 6em;
+}
+
+.site-footer-social {
+	text-align:center;
+
+	a {
+		display:block;
+		margin:0 0 $global-spacing/2;
+
+		&:hover {
+			[class*="icon"] {
+				color:lighten($color-dark, 15%);
+			}
+		}
+	}
+	span {
+		display:block;
+		margin-top:-1em;
+		font-size:0.75em;
+	}
+	[class*="icon"] {
+		color:darken($color-dark, 20%);
+		font-size:4em;
+
+	-webkit-transition:all 0.3s ease;
+	   -moz-transition:all 0.3s ease;
+	     -o-transition:all 0.3s ease;
+	    -ms-transition:all 0.3s ease;
+	        transition:all 0.3s ease;
+	}
 }
