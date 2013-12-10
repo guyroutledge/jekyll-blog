@@ -1,0 +1,27 @@
+//*************************
+// $$ Archive
+//**************************
+
+%archive-item {
+	margin:0 0 $global-spacing/2;
+}
+%archive-title {
+	a {
+		display:block;
+		clear:both;
+		border-top:1px solid $color-light;
+	}
+}
+%archive-date {
+	float:left;
+	color:$color-light;
+	font-size:0.75em;
+}
+%archive-meta {
+	float:right;
+	color:$color-light;
+	font-size:0.875em;
+	font-family:$font-brand;
+	font-style:italic;
+	text-transform:lowercase;
+}

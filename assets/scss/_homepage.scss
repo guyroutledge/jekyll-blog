@@ -2,3 +2,19 @@
 // $$ Homepage
 //**************************
 
+.home-article,
+.home-project {
+	@extend %archive-item;
+}
+.home-article-post-title,
+.home-project-post-title {
+	@extend %archive-title;
+}
+.home-article-post-date,
+.home-project-post-date {
+	@extend %archive-date;
+}
+.home-article-post-category,
+.home-project-post-url {
+	@extend %archive-meta;
+}
