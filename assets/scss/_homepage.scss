@@ -10,7 +10,7 @@
 
 	position:relative;
 	padding-left:0;
-	font-style:none;
+	font-style:normal!important;
 
 	&:before {
 		content:'';
@@ -54,6 +54,11 @@
 	@extend %button-small;
 	font-style:none;
 }
+.home-articles-section,
+.home-projects-section {
+	margin-bottom:$global-spacing;
+}
+
 .home-article,
 .home-project {
 	@extend %archive-item;
@@ -61,6 +66,7 @@
 .home-article-post-title,
 .home-project-post-title {
 	@extend %archive-title;
+	margin-bottom:0;
 }
 .home-article-post-title a {
 	@extend %color-articles;

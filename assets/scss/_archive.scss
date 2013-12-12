@@ -3,13 +3,18 @@
 //**************************
 
 %archive-item {
-	margin:0 0 $global-spacing/2;
+	margin:0 0 $global-spacing/4;
 }
 %archive-title {
 	a {
 		display:block;
 		clear:both;
+
 		border-top:1px solid $color-light;
+
+		font-family:$font-copy;
+		font-size:0.5em;
+		font-style:normal;
 	}
 }
 %archive-date {
