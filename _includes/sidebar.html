@@ -5,10 +5,13 @@
 {% if page.next or page.previous %}
 
 	<aside class="site-sidebar">
-
 		<nav class="site-sidebar-navigation">
-			{% if page.next %}<a href="{{ page.next.url }}" title="{{ page.next.title }}" class="site-sidebar-next">Next Post</a>{% endif %}
-			{% if page.previous %}<a href="{{ page.previous.url }}" title="{{ page.previous.title }}" class="site-sidebar-prev">Previous Post</a>{% endif %}
+			{% if page.next %}
+				<a href="{{ page.next.url }}" title="{{ page.next.title }}" class="site-sidebar-next-{{ page.next.categories }}">Next Post</a>
+			{% endif %}
+			{% if page.previous %}
+				<a href="{{ page.previous.url }}" title="{{ page.previous.title }}" class="site-sidebar-prev-{{ page.previous.categories }}">Previous Post</a>
+			{% endif %}
 			<a href="/" title="Go back to the homepage" class="site-sidebar-home">Go Home</a>
 		</nav>
 

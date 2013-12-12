@@ -31,8 +31,8 @@
 }
 
 $i:1;
-$sections: 'home', 'articles', 'articles-light', 'projects', 'about', 'hire-me';
-$section-colours: $color-home, $color-blog, desaturate(lighten($color-blog, 15%), 25%), $color-work, $color-about, $color-hire;
+$sections: 'home', 'articles', 'articles-light', 'projects', 'projects-light', 'about', 'hire-me';
+$section-colours: $color-home, $color-blog, desaturate(lighten($color-blog, 15%), 25%), $color-work, desaturate(lighten($color-work, 15%), 25%), $color-about, $color-hire;
 
 @each $section in $sections {
 	%background-#{$section} {

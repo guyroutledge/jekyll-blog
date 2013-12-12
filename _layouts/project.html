@@ -5,10 +5,20 @@ layout: default
 
 	<header class="post-header">
 		<h1>{{ page.title }}</h1>
+		<p class="post-meta"><a href="{{ page.link }}">{{ page.link }}</a></p>
 	</header>
 
 	<div class="post-content">
 		{{ content }}
+
+		<div class="project-screenshots">
+			{% for image in page.images %}
+				<a href="{{ page.link }}" title="View live website">
+					<img class="project-{{ image.type }}" src="/images/{{ image.type }}.png" style="background-image:url('/images/{{ image.src }}');" alt="{{ image.type }} screenshot for {{ page.title }}">
+				</a>
+			{% endfor %}
+		</div>
+
 		{% include sidebar.html %}
 	</div>
 

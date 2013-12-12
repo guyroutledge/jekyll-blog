@@ -14,8 +14,10 @@
 		color:$color-copy;
 	}
 }
-.site-sidebar-next,
-.site-sidebar-prev,
+.site-sidebar-next-blog,
+.site-sidebar-prev-blog,
+.site-sidebar-next-projects,
+.site-sidebar-prev-projects,
 .site-sidebar-home {
 	@extend %button;
 	display:block;
@@ -28,11 +30,17 @@
 	border:1px solid #fff;
 	border-bottom:0;
 }
-.site-sidebar-next {
+.site-sidebar-next-blog {
 	@extend %background-articles;
 }
-.site-sidebar-prev {
+.site-sidebar-prev-blog {
 	@extend %background-articles-light;
+}
+.site-sidebar-next-projects {
+	@extend %background-projects;
+}
+.site-sidebar-prev-projects {
+	@extend %background-projects-light;
 }
 .site-sidebar-home {
 	@extend %background-home;

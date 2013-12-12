@@ -1,0 +1,49 @@
+//*************************
+// $$ Work
+//**************************
+
+.projects {
+	h1, h2, h3, h4, h5, h6, a {
+		@extend %color-projects;
+	}
+}
+.project-screenshots {
+	margin:$global-spacing 0;
+}
+
+// Take advantage of automatically fluid images and add
+// a background image, constraining the size with
+// background-size to display each piece of work
+
+//background-size: (viewportWidth/imageWidth)*100% (viewportHeight/imageHeight)*100%
+
+.project-desktop {
+	display:inline-block;
+	width:380px;
+
+	background-position:50% 14%;
+	background-repeat:no-repeat;
+	background-size:(456/498)*100% (257/399)*100%;
+
+	vertical-align:baseline;
+}
+.project-tablet {
+	display:inline-block;
+	width:237px;
+
+	background-position:50% 57%;
+	background-repeat:no-repeat;
+	background-size:(213/274)*100% (272/347)*100%;
+
+	vertical-align:baseline;
+}
+.project-mobile {
+	display:inline-block;
+	width:130px;
+
+	background-position:50% 52%;
+	background-repeat:no-repeat;
+	background-size:(138/166)*100% (215/322)*100%;
+
+	vertical-align:baseline;
+}

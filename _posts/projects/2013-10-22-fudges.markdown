@@ -3,6 +3,10 @@ layout:     project
 title:      "Thomas J Fudges"
 date:       2013-10-20 10:20:28
 link:       http://www.thomasjfudges.co.uk
-categories:
-- projects
+categories: projects
+images:
+    - type: desktop
+      src: fudges-desktop.jpg
 ---
+
+This is some content.
