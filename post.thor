@@ -3,10 +3,11 @@ class Post < Thor
 
   desc "new", "create a new post"
   method_option :editor, :default => "vim"
+  method_option :date
 
   def new(*title)
     title = title.join(" ")
-    date = Time.now.strftime('%Y-%m-%d')
+    date = options[:date] || Time.now.strftime('%Y-%m-%d')
     filename = "_posts/blog/#{date}-#{title.to_url}.md"
 
     if File.exist?(filename)
