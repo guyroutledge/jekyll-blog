@@ -19,6 +19,9 @@
 	width:4 * $global-spacing;
 }
 
+.site-container {
+	overflow-x:hidden;
+}
 .site-navigation {
 	@extend %grid-narrow;
 }

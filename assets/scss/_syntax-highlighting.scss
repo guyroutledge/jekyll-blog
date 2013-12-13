@@ -19,6 +19,14 @@ pre {
 	     -o-tab-size:4;
 	        tab-size:4;
 }
+h1, h2, h3, h4, h5, h6, p {
+	code {
+		display:inline-block;
+		color:$color-blog;
+		background:desaturate(lighten($color-blog, 60%), 25%);
+		padding:0.1em 0.25em;
+	}
+}
 .highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: $color-hire; background-color: #e3d2d2 } /* Error */

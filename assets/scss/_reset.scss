@@ -91,14 +91,15 @@ i, em { font-family:$font-brand; font-style:italic; }
 small { font-size:80%; }
 
 pre, code, kbd, samp {
-	font-family: monospace, serif;
+	font-family: "Ubuntu Mono", Consolas, Menlo, monospace, serif;
 	_font-family: 'courier new', monospace;
 	font-size: 1em;
 }
-pre {
-	white-space: pre;
-	white-space: pre-wrap;
-	word-wrap: break-word;
+
+hr {
+	display:block;
+	margin:$global-spacing 0;
+	border:1px solid $color-light;
 }
 
 //*************************

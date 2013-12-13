@@ -10,7 +10,7 @@ permalink: /blog/index.html
 		<h1>Articles &amp; Ramblings</h1>
 	</header>
 
-	{% for post in site.categories['blog'] | limit: 5 %}
+	{% for post in site.categories['blog'] %}
 		<article class="home-article">
 			<time class="home-article-post-date">{{ post.date | date_to_string }}</time>
 			<span class="home-article-post-category">{{ post.tags }}</span>

@@ -27,7 +27,6 @@
 		font-style:italic;
 
 		p:last-child { margin-bottom:0; }
-
 	}
 }
 .post-header {
@@ -42,4 +41,9 @@
 	color:$color-light;
 	font-size:0.875em;
 }
-
+.post-content {
+	img {
+		display:block;
+		margin:$global-spacing/2 0;
+	}
+}
