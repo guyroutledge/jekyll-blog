@@ -42,8 +42,16 @@
 	font-size:0.875em;
 }
 .post-content {
-	img {
+	img, figure {
 		display:block;
-		margin:$global-spacing/2 0;
+		margin:$global-spacing 0;
+	}
+	figure img {
+		margin:0;
+	}
+	figcaption {
+		margin:0.5em 0 0;
+		font-family:$font-brand;
+		text-align:center;
 	}
 }

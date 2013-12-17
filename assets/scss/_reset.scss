@@ -107,13 +107,13 @@ hr {
 //**************************
 
 ul, ol {
-	margin: $global-spacing/2 $global-spacing/2 $global-spacing/2 0;
+	margin: $global-spacing/2 $global-spacing/2 $global-spacing/2 1em;
 	padding:0;
-	list-style-position:inside;
+	list-style-position:outside;
 	list-style-image:none;
 }
 li {
-	line-height:1em;
+	line-height:1.5;
 	font-size:inherit;
 	padding:0;
 }

@@ -19,11 +19,11 @@ pre {
 	     -o-tab-size:4;
 	        tab-size:4;
 }
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, li {
 	code {
 		display:inline-block;
 		color:$color-blog;
-		background:desaturate(lighten($color-blog, 60%), 25%);
+		background:rgba(desaturate(lighten($color-blog, 50%), 20%), 0.2);
 		padding:0.1em 0.25em;
 	}
 }
