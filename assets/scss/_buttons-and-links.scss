@@ -51,11 +51,12 @@ $section-colours: $color-home, $color-blog, desaturate(lighten($color-blog, 15%)
 			color:lighten( nth($section-colours, $i), 15% );
 		}
 	}
-	$i: $i + 1;
 
 	.#{$section} {
 		h1, h2, h3, h4, h5, h6, a {
 			@extend %color-#{$section};
 		}
+		@include selection(lighten(nth($section-colours, $i), 20%));
 	}
+	$i: $i + 1;
 }

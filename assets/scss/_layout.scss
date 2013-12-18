@@ -12,13 +12,14 @@
 
 .site-container {
 	width:100%;
+	margin-left:0.25em;
 	overflow-x:hidden;
 }
 .site-navigation {
 	@extend %grid-narrow;
 	position:fixed;
 	top:0;
-	left:(-4 * $global-spacing);
+	left:(-4 * $global-spacing) + 0.25em;
 	height:100%;
 }
 .site-content {
