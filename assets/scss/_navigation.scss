@@ -29,10 +29,16 @@ $nav-items: 'home', 'articles', 'projects', 'about', 'hire-me';
 		width:100%;
 		height:$global-spacing;
 		line-height:$global-spacing;
-		padding:0!important;
+		padding:0 0 0 3em!important;
 
 		border:1px solid $color-dark;
 		border-top:0;
+
+		text-align:left!important;
+
+		i {
+			margin-right:0.5em;
+		}
 	}
 }
 
@@ -46,12 +52,12 @@ $nav-items: 'home', 'articles', 'projects', 'about', 'hire-me';
 	background: $color-dark; /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE1JSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMwJSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ1JSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 15%, #cccccc 15%, #cccccc 30%, #ffffff 30%, #ffffff 45%, #cccccc 45%, #cccccc 60%, #ffffff 60%, #ffffff 75%, #cccccc 75%, #cccccc 90%, #ffffff 90%, #ffffff 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(15%,#ffffff), color-stop(15%,#cccccc), color-stop(30%,#cccccc), color-stop(30%,#ffffff), color-stop(45%,#ffffff), color-stop(45%,#cccccc), color-stop(60%,#cccccc), color-stop(60%,#ffffff), color-stop(75%,#ffffff), color-stop(75%,#cccccc), color-stop(90%,#cccccc), color-stop(90%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 15%,#cccccc 15%,#cccccc 30%,#ffffff 30%,#ffffff 45%,#cccccc 45%,#cccccc 60%,#ffffff 60%,#ffffff 75%,#cccccc 75%,#cccccc 90%,#ffffff 90%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left,  #ffffff 0%,#ffffff 15%,#cccccc 15%,#cccccc 30%,#ffffff 30%,#ffffff 45%,#cccccc 45%,#cccccc 60%,#ffffff 60%,#ffffff 75%,#cccccc 75%,#cccccc 90%,#ffffff 90%,#ffffff 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 15%,#cccccc 15%,#cccccc 30%,#ffffff 30%,#ffffff 45%,#cccccc 45%,#cccccc 60%,#ffffff 60%,#ffffff 75%,#cccccc 75%,#cccccc 90%,#ffffff 90%,#ffffff 100%); /* IE10+ */
-	background: linear-gradient(to right,  #ffffff 0%,#ffffff 15%,#cccccc 15%,#cccccc 30%,#ffffff 30%,#ffffff 45%,#cccccc 45%,#cccccc 60%,#ffffff 60%,#ffffff 75%,#cccccc 75%,#cccccc 90%,#ffffff 90%,#ffffff 100%); /* W3C */
+	background:    -moz-linear-gradient(left,  #ffffff 0%, #ffffff 14%, #cccccc 15%, #cccccc 30%, #ffffff 30%, #ffffff 45%, #cccccc 45%, #cccccc 60%, #ffffff 60%, #ffffff 75%, #cccccc 75%, #cccccc 90%, #ffffff 90%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(14%,#ffffff), color-stop(15%,#cccccc), color-stop(30%,#cccccc), color-stop(30%,#ffffff), color-stop(45%,#ffffff), color-stop(45%,#cccccc), color-stop(60%,#cccccc), color-stop(60%,#ffffff), color-stop(75%,#ffffff), color-stop(75%,#cccccc), color-stop(90%,#cccccc), color-stop(90%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,      #ffffff 0%,#ffffff 14%,#cccccc 15%,#cccccc 30%,#ffffff 30%,#ffffff 45%,#cccccc 45%,#cccccc 60%,#ffffff 60%,#ffffff 75%,#cccccc 75%,#cccccc 90%,#ffffff 90%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background:      -o-linear-gradient(left,      #ffffff 0%,#ffffff 14%,#cccccc 15%,#cccccc 30%,#ffffff 30%,#ffffff 45%,#cccccc 45%,#cccccc 60%,#ffffff 60%,#ffffff 75%,#cccccc 75%,#cccccc 90%,#ffffff 90%,#ffffff 100%); /* Opera 11.10+ */
+	background:     -ms-linear-gradient(left,      #ffffff 0%,#ffffff 14%,#cccccc 15%,#cccccc 30%,#ffffff 30%,#ffffff 45%,#cccccc 45%,#cccccc 60%,#ffffff 60%,#ffffff 75%,#cccccc 75%,#cccccc 90%,#ffffff 90%,#ffffff 100%); /* IE10+ */
+	background:         linear-gradient(to right,  #ffffff 0%,#ffffff 14%,#cccccc 15%,#cccccc 30%,#ffffff 30%,#ffffff 45%,#cccccc 45%,#cccccc 60%,#ffffff 60%,#ffffff 75%,#cccccc 75%,#cccccc 90%,#ffffff 90%,#ffffff 100%); /* W3C */
 
 	cursor:pointer;
 	z-index:100;
