@@ -5,4 +5,13 @@ date:       2013-07-19 10:20:28
 link:       http://www.yeovalley.co.uk
 categories:
 - projects
+images:
+    - type: desktop
+      src: yeo.jpg
+    - type: mobile
+      src: yeo-mobile.jpg
 ---
+
+I developed a series of new features, HTML5 games, Facebook apps,
+micro-sites, Shopify eCommerce and on-pack promotions. I also took the
+lead on building the brand’s mobile experience.

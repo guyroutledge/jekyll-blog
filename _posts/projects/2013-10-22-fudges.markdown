@@ -9,4 +9,7 @@ images:
       src: fudges-desktop.jpg
 ---
 
-This is some content.
+I took the front-end lead on this new site build, leading a team of
+junior front-end devs and contractors to a tight deadline of 2 weeks
+using an agile-like approach. The site also included integration with
+Shopify via their public API.

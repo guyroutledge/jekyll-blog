@@ -5,4 +5,10 @@ date:       2012-04-05 10:20:28
 link:       http://www.letticeparty.com
 categories:
 - projects
+images:
+    - type: desktop
+      src: lettice.jpg
 ---
+
+I was the sole front-end developer on this project, a new site build and
+re-brand for a London party planning company.

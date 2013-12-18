@@ -12,33 +12,42 @@
 
 //background-size: (viewportWidth/imageWidth)*100% (viewportHeight/imageHeight)*100%
 
-.project-desktop {
-	display:inline-block;
-	width:380px;
+.post-content {
+	%project {
+		display:inline-block;
+		margin:0;
+	}
+	.project-desktop {
+		@extend %project;
 
-	background-position:50% 14%;
-	background-repeat:no-repeat;
-	background-size:(456/498)*100% (257/399)*100%;
+		width:380px;
 
-	vertical-align:baseline;
-}
-.project-tablet {
-	display:inline-block;
-	width:237px;
+		background-position:49% 14%;
+		background-repeat:no-repeat;
+		background-size:(456/497)*100% (257/399)*100%;
 
-	background-position:50% 57%;
-	background-repeat:no-repeat;
-	background-size:(213/274)*100% (272/347)*100%;
+		vertical-align:baseline;
+	}
+	.project-tablet {
+		@extend %project;
 
-	vertical-align:baseline;
-}
-.project-mobile {
-	display:inline-block;
-	width:130px;
+		width:237px;
 
-	background-position:50% 52%;
-	background-repeat:no-repeat;
-	background-size:(138/166)*100% (215/322)*100%;
+		background-position:50% 57%;
+		background-repeat:no-repeat;
+		background-size:(213/274)*100% (272/347)*100%;
 
-	vertical-align:baseline;
+		vertical-align:baseline;
+	}
+	.project-mobile {
+		@extend %project;
+
+		width:130px;
+
+		background-position:50% 52%;
+		background-repeat:no-repeat;
+		background-size:(138/166)*100% (215/322)*100%;
+
+		vertical-align:baseline;
+	}
 }

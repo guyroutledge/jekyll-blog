@@ -5,4 +5,15 @@ date:       2013-09-05 10:20:28
 link:       http://www.kallo.com
 categories:
 - projects
+images:
+    - type: desktop
+      src: kallo-desktop.jpg
+    - type: tablet
+      src: kallo-tablet.jpg
+    - type: mobile
+      src: kallo-mobile.jpg
 ---
+
+I took the front-end lead on this new site build, leading a team of
+2 junior front-end devs. The site made heavy use of Sass, SVG and
+full-screen slideshows & illustrations and is responsive and mobile friendly.

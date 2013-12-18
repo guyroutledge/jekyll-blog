@@ -5,4 +5,17 @@ date:       2013-05-25 10:20:28
 link:       
 categories:
 - projects
+images:
+    - type: desktop
+      src: smeg-desktop.jpg
+    - type: tablet
+      src: smeg-tablet.jpg
+    - type: mobile
+      src: smeg-mobile.jpg
 ---
+
+I built this promotional microsite for [Abra-ca-Debora
+pancakes](http://www.abra-ca-debora.co.uk) for their "Win a SMEG Fridge"
+competition. The site provided customers a way to enter a unique code
+from special packs and find out if they won the big prize instantly. The
+site was mobile optimized and responsive.

@@ -12,6 +12,8 @@
 	padding-left:0;
 	font-style:normal!important;
 
+	z-index:20; // above navicon
+
 	&:before {
 		content:'';
 		position:absolute;

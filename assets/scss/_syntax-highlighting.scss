@@ -25,6 +25,11 @@ h1, h2, h3, h4, h5, h6, p, li {
 		color:$color-blog;
 		background:rgba(desaturate(lighten($color-blog, 50%), 20%), 0.2);
 		padding:0.1em 0.25em;
+
+		.projects & {
+			color:$color-work;
+			background:rgba(desaturate(lighten($color-work, 50%), 20%), 0.2);
+		}
 	}
 }
 .highlight  { background: #ffffff; }
