@@ -4,10 +4,10 @@
 
 .available-banner {
 	position:absolute;
-	top:0;
+	top:-6em;
 	right:2em;
 
-	padding:6em 1.5em 1.5em;
+	padding:12em 1.5em 1.5em;
 
 	color:$color-light;
 	background:$color-hire;
@@ -17,6 +17,16 @@
 	font-size:0.875em; // 14px / 16px
 	text-align:center;
 	text-transform:uppercase;
+
+	-webkit-transition: all 400ms cubic-bezier(0.385, 0, 0.490, 1); /* older webkit */
+	-webkit-transition: all 400ms cubic-bezier(0.385, -0.600, 0.490, 1.650);
+	   -moz-transition: all 400ms cubic-bezier(0.385, -0.600, 0.490, 1.650);
+	     -o-transition: all 400ms cubic-bezier(0.385, -0.600, 0.490, 1.650);
+	        transition: all 400ms cubic-bezier(0.385, -0.600, 0.490, 1.650);
+
+	&:hover, &:focus, &:active {
+		top:-2em;
+	}
 
 	em {
 		display:block;
