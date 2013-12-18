@@ -39,9 +39,9 @@ $nav-items: 'home', 'articles', 'projects', 'about', 'hire-me';
 .nav-icon {
 	display: inline-block;
 	float:right;
-	width: 25px;
-	height: 25px;
-	margin:1em -2em 0 0;
+	width: 1.5em;
+	height: 1.5em;
+	margin:1em -1.75em 0 0;
 
 	background: $color-dark; /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -55,6 +55,7 @@ $nav-items: 'home', 'articles', 'projects', 'about', 'hire-me';
 
 	cursor:pointer;
 	z-index:100;
+
 }
 
 .navigation-control {

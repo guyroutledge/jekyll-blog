@@ -28,5 +28,22 @@
 		display:block;
 		font-size:1.25em;
 	}
+
+	@include respond-to($media-tablet) {
+		top:0.75em;
+		right:0;
+		padding:0.5em 1.5em 0.5em 3em;
+
+		font-size:0.75em;
+		text-align:right;
+		box-shadow:-5px 0 0 white, -10px 0 0 #9e2a2a;
+
+		em, span {
+			display:inline-block;
+		}
+		em {
+			margin-right:0.25em;
+		}
+	}
 }
 

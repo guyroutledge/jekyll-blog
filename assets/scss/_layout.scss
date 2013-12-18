@@ -5,10 +5,6 @@
 %grid-wide {
 	max-width:50em;
 	padding-right:(4 * $global-spacing);
-
-	@include respond-to($media-desktop-small) {
-		padding-right:0;
-	}
 }
 %grid-narrow {
 	width:4 * $global-spacing;
@@ -27,6 +23,10 @@
 }
 .site-content {
 	@extend %grid-wide;
+
+	@include respond-to($media-tablet) {
+		padding-right:0;
+	}
 }
 
 .site-content,
@@ -40,24 +40,40 @@
 	padding:$global-spacing;
 }
 .main-content {
-	padding-bottom:$global-spacing * 2;
+	padding-bottom:$global-spacing * 3;
+}
+.main-content,
+.site-footer {
+	@include respond-to($media-tablet) {
+		padding-top:$global-spacing * (3/2);
+	}
+	@include respond-to($media-mobile) {
+		padding-left:2em;
+		padding-right:2em;
+	}
 }
 
 .site-sidebar {
 	bottom:5px; // account for border on footer
-	left:100%;
 }
 .site-sidebar,
 .site-footer-social {
 	position:absolute;
+	left:100%;
+
 	width:4 * $global-spacing;
+
+	@include respond-to($media-tablet) {
+		left:auto;
+		right:0;
+	}
 }
 .site-footer-social {
 	top:0;
-	left:100%;
 }
 .site-footer {
 	padding-bottom:1em;
+	z-index:20; // so navicon disappears behind it
 
 	&:after {
 		content:"";

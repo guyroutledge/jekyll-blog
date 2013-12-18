@@ -32,4 +32,5 @@ $font-size-h4:20px; $font-leading-h4:32px;
 
 $font-margin-bottom:15px;
 
-$media-desktop-small:calc-em(980px, $font-size-default);
+$media-tablet:40.625em; // 650px
+$media-mobile:27.5em; // 400px
