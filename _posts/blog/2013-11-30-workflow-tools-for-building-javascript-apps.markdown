@@ -58,9 +58,10 @@ I could use the ng-boilerplate and just customise it to my own liking - but this
 
 I've recently started leaning Rails too and one of the things that I really like about it is the generators for creating migrations, models, controllers etc. It's a real time saver and it helps you to do things "the Rails way". There's a tool called Yeoman for doing a similar thing for front-end workflows and there's a generator for Angular, so I checked it out.
 
-    $ mkdir angular-project && cd $_
-    $ yo angular
-    
+{% highlight bash %}
+    mkdir angular-project && cd $_
+    yo angular
+{% endhighlight %}
 
 This creates an Angular project (optionally with Bootstrap) with Bower, Karma for test running and a whole load of grunt tasks for serving a local dev environment, Live Reload, and all manner of other things. The [angular-generator][7] for Yeoman allows you to generate routes, controllers, views, and lots more.
 
