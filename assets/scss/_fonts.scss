@@ -5,7 +5,7 @@ $font-path: '../fonts/';
 // the name that will be used in font-family property
 $font-families: 'baskerville', 'PTSans', 'icons';
 // the filename of your font without the file extension
-$font-filenames: 'baskerville', 'pt-sans', 'icons';
+$font-filenames: 'baskerville-italic', 'pt-sans', 'icons';
 $i: 1;
 
 @each $font-family in $font-families {
