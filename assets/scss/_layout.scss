@@ -2,28 +2,28 @@
 // $$ Layout
 //**************************
 
-%grid-fixed {
-	display:table-cell;
-	vertical-align:top;
-}
-
 %grid-wide {
-	@extend %grid-fixed;
-
-	width:auto;
 	max-width:50em;
 	padding-right:(4 * $global-spacing);
+
+	@include respond-to($media-desktop-small) {
+		padding-right:0;
+	}
 }
 %grid-narrow {
-	@extend %grid-fixed;
 	width:4 * $global-spacing;
 }
 
 .site-container {
+	width:100%;
 	overflow-x:hidden;
 }
 .site-navigation {
 	@extend %grid-narrow;
+	position:fixed;
+	top:0;
+	left:(-4 * $global-spacing);
+	height:100%;
 }
 .site-content {
 	@extend %grid-wide;

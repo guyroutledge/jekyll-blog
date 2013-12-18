@@ -61,7 +61,8 @@ $nav-items: 'home', 'articles', 'projects', 'about', 'hire-me';
 	position:absolute;
 	left:-9999px;
 }
-.site-container {
+.site-container,
+.site-navigation {
 	-webkit-transition:all 0.75s ease-in-out;
 	   -moz-transition:all 0.75s ease-in-out;
 	     -o-transition:all 0.75s ease-in-out;
@@ -69,5 +70,9 @@ $nav-items: 'home', 'articles', 'projects', 'about', 'hire-me';
 	        transition:all 0.75s ease-in-out;
 }
 .navigation-control:checked + .site-container {
-	margin-left:(-4 * $global-spacing) + 0.5em;
+	margin-left:4 * $global-spacing;
+
+	.site-navigation {
+		left:0;
+	}
 }
