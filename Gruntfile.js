@@ -55,11 +55,17 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      css: {
+      sass: {
         files: [
           'assets/scss/*.scss'
         ],
-        tasks: ['sass']
+        tasks: ['sass'],
+	  },
+	  css: {
+	    files: ['assets/css/main.min.css'],
+		options: {
+			livereload: true
+		}
       },
       js: {
         files: [
