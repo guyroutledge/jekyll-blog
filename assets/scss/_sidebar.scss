@@ -47,3 +47,44 @@
 .site-sidebar-home {
 	@extend %background-home;
 }
+
+//*************************
+// $$ Social
+//**************************
+
+$color-sharing:#f0f0f0;
+
+.site-sidebar .social-title {
+	margin: 0 0 0.25em;
+
+	color: $color-sharing;
+	font-size: 4em;
+	text-align: right;
+	line-height: 0.875em;
+}
+.social-buttons {
+	position:relative;
+	list-style:none;
+	margin:0;
+	padding:0;
+
+	li {
+		margin:0 0 0.5em;
+	}
+
+	.icon-comment {
+		position:absolute;
+		top: 40px;
+		right: 10px;
+
+		color: $color-sharing;
+		font-size: 10em;
+
+		-webkit-transform: rotate(5deg);
+		    -ms-transform: rotate(5deg);
+		        transform: rotate(5deg);
+
+		z-index: -1;
+	}
+}
+
