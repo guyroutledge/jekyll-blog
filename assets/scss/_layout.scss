@@ -43,6 +43,11 @@
 .main-content {
 	padding-bottom:$global-spacing * 3;
 }
+.has-sharing-buttons .main-content {
+	@include respond-to($media-tablet) {
+		padding-bottom:$global-spacing * 6;
+	}
+}
 .main-content,
 .site-footer {
 	@include respond-to($media-tablet) {

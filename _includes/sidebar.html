@@ -5,6 +5,11 @@
 {% if page.next or page.previous %}
 
 	<aside class="site-sidebar">
+
+		{% if page.categories[0] == 'blog' %}
+			{% include social.html %}
+		{% endif %}
+
 		<nav class="site-sidebar-navigation">
 			{% if page.next %}
 				<a href="{{ page.next.url }}" title="{{ page.next.title }}" class="site-sidebar-next-{{ page.next.categories }}">Next Post</a>
