@@ -10,7 +10,7 @@
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="shortcut icon" href="/favicon.png">
 	</head>
-	<body>
+	<body class="{% if page.categories[0] == 'blog' %}has-sharing-buttons{% endif %}">
 		<!-- show hide navigation by switching :checked pseudo class -->
 		<input type="checkbox" id="navigation" class="navigation-control">
 		<div class="site-container">

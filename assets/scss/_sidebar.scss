@@ -58,33 +58,52 @@ $color-sharing:#f0f0f0;
 	margin: 0 0 0.25em;
 
 	color: $color-sharing;
-	font-size: 4em;
+	font-size: 3.5em;
 	text-align: right;
-	line-height: 0.875em;
-}
-.social-buttons {
-	position:relative;
-	list-style:none;
-	margin:0;
-	padding:0;
+	line-height: 1em;
 
-	li {
-		margin:0 0 0.5em;
+	@include respond-to(calc-em(800px, $font-size-default)) {
+		text-align:left;
+	}
+	@include respond-to($media-tablet) {
+		display:none;
+	}
+}
+.social {
+	position:relative;
+
+	&:hover {
+		.social-buttons { opacity:1; }
 	}
 
 	.icon-comment {
 		position:absolute;
-		top: 40px;
+		bottom: 5px;
 		right: 10px;
 
 		color: $color-sharing;
-		font-size: 10em;
 
 		-webkit-transform: rotate(5deg);
 		    -ms-transform: rotate(5deg);
 		        transform: rotate(5deg);
 
 		z-index: -1;
+
+		&:before { font-size:12em; }
+	}
+}
+.social-buttons {
+	list-style:none;
+	min-height:165px;
+	margin:0;
+	padding:0;
+
+	opacity:0;
+	-webkit-transition:1s;
+	        transition:1s;
+
+	li {
+		margin:0 0 0.5em;
 	}
 }
 
