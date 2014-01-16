@@ -78,8 +78,10 @@ on each iteration of the loop.
 This example is trivial and doing a similar task might be more suited to
 using a [`for...in`
 loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in).
-However, for more complex situations, we can use other Javascript
-operations to construct the contents of our bracket notation:
+However, for more complex situations like a recent side project of mine
+where I created [an interactive box model
+demo](http://guyroutledge.github.io/box-model), we can use other
+Javascript operations and construct a _variable_ object key with bracket notation:
 
 {% highlight javascript %}
     var setProperties = function(){
@@ -91,20 +93,21 @@ operations to construct the contents of our bracket notation:
 			boxModel[ 'box' + properties[i] ] = {};
 
 			for ( var j = 0; j < sides.length; j++ ) {
-				boxModel[ 'box' + properties[i] ][ sides[j] ] = j * 10;
+				boxModel[ 'box' + properties[i] ][ sides[j] ] = i * 10;
 			}
 		}
 		console.log(boxModel);
 		logs:
 		// {
-		// 	boxMargin :  { top : 0, right : 10, bottom : 20, left : 30 },
-		// 	boxPadding : { top : 0, right : 10, bottom : 20, left : 30 },
-		// 	boxBorder :  { top : 0, right : 10, bottom : 20, left : 30 }
+		// 	boxMargin :  { top : 0, right : 0, bottom : 0, left : 0 },
+		// 	boxPadding : { top : 10, right : 10, bottom : 10, left : 10 },
+		// 	boxBorder :  { top : 20, right : 20, bottom : 20, left : 20 }
 		// }
 	};
 {% endhighlight %}
 
-It could be argued that this code isn't very easy to read, but it certainly
+It could be argued that this code isn't that easy to read, but it certainly
 gets the job done in a concise way, avoids repetition and (once
 understood) would be easy to maintain if additional properties were to
 be added to the list.
+
