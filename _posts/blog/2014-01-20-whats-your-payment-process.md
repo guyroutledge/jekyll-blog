@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What's your payment process"
+title: "What's your payment process?"
 date: 2014-01-20
 tags: Business
 categories: blog
