@@ -12,6 +12,9 @@
 	p + h4 {
 		margin-top:$font-margin-bottom * 2;
 	}
+	p a {
+		text-decoration:underline;
+	}
 	li {
 		margin:0 0 0.5em;
 	}
@@ -57,9 +60,6 @@
 	}
 }
 .post-content {
-	a {
-		text-decoration:underline;
-	}
 	img, figure {
 		display:block;
 		margin:$global-spacing 0;
