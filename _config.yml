@@ -1,7 +1,7 @@
 name: Guy Routledge
 description: Musings on web development, design & business
 available: true
-host: www.guyroutledge.co.uk
+url: www.guyroutledge.co.uk
 
 permalink: /:categories/:title
 links:
