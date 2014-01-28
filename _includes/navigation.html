@@ -4,17 +4,10 @@
 	<ul>
 		{% for link in site.links %}
 			<li>
-				{% if link.external %}
-					<a href="{{ link.url }}" class="nav-{{ link.title | downcase | replace:' ','-' }}">
-						<i class="icon-{{ link.title | downcase | replace:' ','-' }}"></i>
-						{{ link.title }}
-					</a>
-				{% else %}
-					<a href="{{ site.url }}{{ link.url }}" class="nav-{{ link.title | downcase | replace:' ','-' }}">
-						<i class="icon-{{ link.title | downcase | replace:' ','-' }}"></i>
-						{{ link.title }}
-					</a>
-				{% endif %}
+				<a href="{{ link.url }}" class="nav-{{ link.title | downcase | replace:' ','-' }}">
+					<i class="icon-{{ link.title | downcase | replace:' ','-' }}"></i>
+					{{ link.title }}
+				</a>
 			</li>
 		{% endfor %}
 	</ul>
