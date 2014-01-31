@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "You are what you wear"
-date: 2014-01-23
+date: 2014-01-31
 tags: Business
 categories: blog
 ---
