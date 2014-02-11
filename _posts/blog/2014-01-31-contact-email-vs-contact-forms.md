@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Contact email vs. Contact&nbsp;forms"
-date: 2014-01-31
+date: 2014-02-11
 tags: Rants
 categories: blog
 ---
@@ -79,13 +79,13 @@ user? Which is better for the business? I think the answer is probably
 that a business would prefer a form and some users would prefer an email
 address.
 
-So my solution would be to provide both. How hard is that? Doesn&rsquo;t
+So my solution would be to provide both. How hard is that? It doesn&rsquo;t
 sound difficult but I&rsquo;ve visited many sites where it&rsquo;s been
-a one or the other kinda thing.
+a "one or the other" kinda thing.
 
 The important thing to consider is that if *any* of your customers go
 elsewhere because they weren&rsquo;t able to contact you in their
 preferred method, that&rsquo;s a customer that you probably could have
-kept by providing options.
+kept by providing the choice.
 
 
