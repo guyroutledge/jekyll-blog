@@ -28,7 +28,7 @@ input[type="radio"]:checked {
 {% endhighlight %}
 
 Using sibling selectors like the adjacent sibling selector allows the
-styling of an element that is next to another. In the case of inputs,
+styling of an element that is next to another one. In the case of inputs,
 they are often adjacent to a label in the document.
 
 {% highlight html %}
@@ -48,7 +48,7 @@ input[type="radio"]:checked + label {
 ## Labels & inputs
 
 So, we can style nearby elements differently based on the state of the
-chceked attribute. But we can also link labels and inputs together so
+checked attribute. But we can also link labels and inputs together so
 that clicking on the label activates the checking and unchecking of the
 input.
 
@@ -60,28 +60,30 @@ input.
 {% endhighlight %}
 
 Here the `for` attribute on the label maps to the `id` attribute on the
-input. The value of the `name` attribute on each input match as these
-two inputs are both part of the same group of inputs.
+input. The value of the `name` attribute of the inputs match as these
+two inputs are both part of the same group.
 
 Now, clicking on the label will select the input that it’s linked to and
 mark it as checked.
 
 ## Hide the input
 
-This behaviour still works with the input "visually hidden". The could be achieved
-by positioning it off the page with `position:absolute` or setting
-`visibility:hidden`.
+This behaviour still works with the input "visually hidden". This could
+be achieved by positioning it off the page with `position:absolute` or
+setting `visibility:hidden`.
 
 ## Replace the input
 
 The form behaves as before but now we don’t have any visual indication
 that this is a radio button or which option has been selected. We can
-now re-create our own version of the input.
+now re-create our own instead and make it look however we please.
 
 Using pseudo elements `:before` and `:after` on the label, we can create
 our own custom unchecked and checked representation of the input.
 
-The unchecked state is handled by the `:before` element.
+The unchecked state is handled by the `:before` element and setting
+equal width and height, a thin border and `border-radius:100%` creates
+an outline circle.
 
 {% highlight css %}
 label {
@@ -115,7 +117,7 @@ input[type="radio"]:checked + label:after {
 	width: 8px;
 	height: 8px;
 
-	background: #ff4f4b;
+	background: #ff4f4b; /*crimson*/
 	border-radius: 100%;
 }
 {% endhighlight %}
