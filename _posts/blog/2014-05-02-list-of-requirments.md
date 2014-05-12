@@ -18,6 +18,7 @@ things, so here it is for anyone who might like to check it out.
 
 ## What needs to be in place before I start:
 
+1. A paid deposit (props to [@daveliveseyuk](https://twitter.com/daveliveseyuk/status/463679089954807808))
 1. Remote git repo set up on your platform of choice with push access
    granted to me.
 1. Staging environment set up with URL as discussed
