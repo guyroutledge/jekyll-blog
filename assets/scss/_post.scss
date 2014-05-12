@@ -75,6 +75,39 @@
 }
 
 //*************************
+// $$ Post Signup
+//**************************
+
+.post-signup {
+	form {
+		margin:1.5em 0;
+		padding:1.5em;
+		background:transparentize($color-blog, 0.8);
+	}
+	label {
+		display:block;
+	}
+	input[type="email"] {
+		width:100%;
+		padding:0.25em 0.5em;
+	}
+	input[type="submit"] {
+		@extend %button;
+		@extend %background-articles;
+		padding:0.5em 3em;
+		border:0;
+		vertical-align:middle;
+	}
+	.finger {
+		display:inline-block;
+		font-size:4em;
+		margin:0 0.1em 0 -1.1em;
+		vertical-align:middle;
+	}
+}
+
+
+//*************************
 // $$ Page Specific
 //**************************
 
