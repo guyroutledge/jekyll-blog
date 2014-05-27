@@ -11,7 +11,9 @@ Spoiler alert - you don’t have to be a web developer for this to work!
 
 This post might seem like a massive brag but that’s not my intention
 - it’s to look at a solution to what initially sounds like a ludicrous
-pipe-dream.
+  pipe-dream. *Edit to add* It also shouldn’t be considered *advice*
+  - just the documentation of a thought process and something I’m going
+  to implement myself.
 
 ## The Why?
 
@@ -222,12 +224,12 @@ years?](http://thepropertypodcast.com/2014/04/tpp058-does-property-really-double
 
 If each property goes up by £25,000, that means the whole portfolio has
 increased in value by £100k. This is a return of *100%* on the initial
-investment. That sounds a bit better than 6%, right? There are still
-mortgages to pay, but there will be tenants in these properties paying
-rent - and paying more than the mortgage payments each month. In fact,
-most property investors will be after a return on investment (ROI) of
-around 10% just from the rental income alone - with the capital
-appreciation a mere bonus!
+investment (over time). That sounds a bit better than 6% annual return,
+right? There are still mortgages to pay, but there will be tenants in
+these properties paying rent - and paying more than the mortgage
+payments each month. In fact, most property investors will be after
+a return on investment (ROI) of around 10% just from the rental income
+alone - with the capital appreciation a mere bonus!
 
 ## Automate
 
