@@ -66,16 +66,16 @@ a minefield to navigate. However, if the industry eyeballs are there,
 I guess it's a good place for spreading the news about your creation.
 
 Finding these can be a bit of a challenge though - I guess they should
-promote themselves better...
+promote themselves better.
 
-## Advertise
+## Advertising
 
 You could pay people to talk about you in the form of advertising or
 sponsorship. If you've created a thing that people will pay for, this is
 probably the most successful route for getting the word out. If you've
 got money, the more you spend in advertising, the more likelihood you
 have of reaching more people. Spending money to make money is
-a reasonable value exchange and works. In theory.
+a reasonable value exchange and works. At least, in theory.
 
 But what if you made a free thing? Should you fork out hundreds of
 currency to try and coax users to come and check your stuff out? You
