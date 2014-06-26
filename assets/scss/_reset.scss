@@ -62,6 +62,10 @@ a:hover, a:active { outline: 0; }
 body {
 	font-size:calc-em($font-size-body, $font-size-default);
 	line-height:($font-leading-body, $font-size-default);
+
+	@include respond-to($media-mobile) {
+		font-size:1em;
+	}
 }
 
 $i: 1;
