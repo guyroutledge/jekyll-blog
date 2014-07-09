@@ -14,7 +14,7 @@ that you then become of more interest - perhaps more "value" - to
 other people; even those "out of your league" be that in terms of your
 social network, net worth, experience in your field, or even your looks.
 
-This is an interesting point - *I* find interesting people "interesting"
+This is an interesting point - I find interesting people "interesting"
 so perhaps developing myself to make me more interesting would be effort
 well spent? I could take up more diverse hobbies, read more books or even
 just start blogging more, perhaps?
