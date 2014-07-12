@@ -6,8 +6,8 @@ tags: Workflow
 categories: blog
 ---
 
-Yesterday, I tried an experiment. It went well, although the process
-still needs work.
+A couple of days ago, I tried an experiment. It went well, although the
+process still needs refinement.
 
 ## The Setup
 
@@ -55,9 +55,10 @@ low quality and I hadn't upped the font-size of my Vim to a point where
 it was readable; definitely two things to try and improve in the future. 
 
 I also had my mic muted, partly because there was someone else working
-in my office that day, and partly down to fear of mumbling a lot of
-nonsense or expletives when stuff didn't work as planned (this only
-happened once in a 2hr30min video which was a pleasant surprise)!
+in my office that day, partly because I wasn't sure what to say, and
+partly down to fear of mumbling a lot of nonsense or expletives when
+stuff didn't work as planned (this only happened once in a 2hr30min
+video which was a pleasant surprise)!
 
 Other than that, I enjoyed the process. I think a lot can be learned by
 watching and sharing this kind of content; what tools people use, how
