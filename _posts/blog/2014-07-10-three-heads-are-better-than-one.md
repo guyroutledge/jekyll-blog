@@ -8,16 +8,16 @@ categories: blog
 
 I don't know about you, but I struggle with keeping up to date with
 what's going on in the Wonderful World of Web. Further to that, I also
-struggle with focusing on my projects, starting what I finish, how to
-develop successful business ideas and explaining myself clearly (among
+struggle with focusing on my projects, finishing  what I start, 
+developing successful business ideas and explaining myself clearly (among
 other things).
 
 I also struggle with working on my own for extended periods of time with
 no-one to bounce ideas off. This is a biggie and it can lead to moments
-of maddness and a fair amount of self-doubt.
+of madness and a fair amount of self-doubt.
 
 I hoped I wasn't the only one who felt like this and decided to reach
-out to a couple of friends. I kept the "maddness" part quiet and floated
+out to a couple of friends. I kept the "madness" part quiet and floated
 the idea of starting a small [mastermind
 group](https://www.google.co.uk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=define%20mastermind%20group).
 
