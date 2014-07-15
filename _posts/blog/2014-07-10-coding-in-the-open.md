@@ -38,7 +38,7 @@ seeing a polished final product, anyone who's interested can see the
 whole process "warts and all".
 
 The completed hangout gets [automatically uploaded to
-YouTube](http://https://www.youtube.com/watch?v=gzFNjaeIy5Q) where you
+YouTube](https://www.youtube.com/watch?v=gzFNjaeIy5Q) where you
 can check it out if this kind of thing floats your boat...
 
 ## The Debrief
