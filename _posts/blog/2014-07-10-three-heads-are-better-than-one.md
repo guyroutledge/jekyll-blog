@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Three heads are better than one"
-date: 2014-07-10
+date: 2014-14-10
 tags: Business
 categories: blog
 ---
