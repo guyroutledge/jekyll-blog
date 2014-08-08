@@ -51,7 +51,7 @@ Less and Sass both have the following features in common:
 
 Instead of going into lengthy descriptions about all the differences, I thought
 I'd cut to the chase and provide a side-by-side comparison of the
-syntax. The Sass with be first, the Less will be second.  Here goes:
+syntax. The Sass will be first, the Less will be second.  Here goes:
 
 ### Variables
 
