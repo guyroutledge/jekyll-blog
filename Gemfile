@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+gem 'jekyll', '~>1.5'
 gem 'thor'
 gem 'stringex'
 gem 'sass'
